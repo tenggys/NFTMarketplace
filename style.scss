@@ -8,7 +8,7 @@
 }
 
 body {
-    background: black;
+    background: rgba(8, 17, 16, 1);
 }
 
 li {
@@ -34,6 +34,10 @@ button {
 .container {
     max-width: 1290px;
     margin: 0 auto;
+}
+
+.span-green {
+    color: $greenText;
 }
 
 .header {
@@ -63,6 +67,126 @@ button {
         background: $greenBtn;
         border: none;
     }
+}
+
+.promo {
+    padding-top: 92px;
+    padding-bottom: 32px;
+    margin-bottom: 92px;
+
+    &__flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__left {
+
+        &_heading {
+            @include text (500, 64px, 76.8px, $textWhite);
+            margin-bottom: 20px;
+        }
+
+        &_text {
+            @include text (400, 16px, 25.6px, $textWhite);
+            margin-bottom: 40px;
+        }
+
+        &_explore {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 303px;
+            margin-bottom: 72px;
+
+            &-button {
+                padding: 16.5px 40px;
+                border-radius: 8px;
+                border: none;
+                @include text (700, 16px, 19.2px, $textWhite);
+                background: $greenBtn
+            }
+
+            &-link {
+                @include text (700, 16px, 19.2px, $textWhite);
+            }
+        }
+
+        &_stats {
+            display: flex;
+            justify-content: space-between;
+            width: 509px;
+
+            .stats__item {
+                width: 128px;
+                border-right: 1px solid $greenBorder;
+
+                &_number {
+                    @include text (500px, 48px, 57.6px, $textWhite);
+                    margin-bottom: 8px;
+                }
+
+                &_text {
+                    @include text (400px, 16px, 25.6px, $textWhite);
+                }
+            }
+        }
+    }
+
+    &__right {
+        width: 575px;
+        height: 637px;
+        position: relative;
+
+        &_img {
+            margin-left: 60px;
+
+        }
+
+        &_svg {
+            position: absolute;
+            left: 0;
+            top: 223px;
+            
+        }
+
+        &_card {
+            max-width: 304px;
+            padding: 20px;
+            border-radius: 16px;
+            background: $blueBack;
+            border-top: 1px solid rgba(214, 239, 14, 1);
+            position: relative;
+            margin-left: 271px;
+            margin-top: -76px;
+
+            .promo__card {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 24px ;
+
+                &_item {
+                    
+                    &-text:first-child {
+                        @include text (400, 16px, 25.6px, $textWhite);
+                    }
+                    &-text:last-child {
+                        @include text (700, 16px, 19.2px, $textWhite);
+                    }
+                }
+            }
+
+            &-button {
+                width: 264px;
+                @include text (700, 16px, 19.2px, $greenText);
+                padding: 16.5px;
+                background: none;
+                border-radius: 8px;
+                border: 1px solid $greenBorder;
+            }
+        }
+    }
+
 }
 
 .footer {
