@@ -1,0 +1,1 @@
+# макет - https://www.figma.com/design/4vWGnA8EyaQamCEIYOV3qu/NFTMarketplace-(Community)?node-id=0-1&t=Mb1S5u75ZfyiPz8r-0

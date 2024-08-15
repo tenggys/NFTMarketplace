@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: black;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.span-button {
+  background: yellow;
+  padding: 2.5px;
+  border-radius: 5px;
+  color: black;
+}
+
+.container {
+  max-width: 1290px;
+  margin: 0 auto;
+}
+
+.header {
+  padding-top: 28px;
+  padding-bottom: 28px;
+}
+.header .header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  width: 435px;
+}
+.header__nav_link a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25.6px;
+  color: rgb(255, 255, 255);
+}
+.header__button {
+  padding: 14.5px 40px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19.2px;
+  color: black;
+  background: rgb(214, 239, 14);
+  border: none;
+}
+
+.footer__top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 48px;
+}
+.footer__top_left {
+  margin-top: 25px;
+  width: 272px;
+}
+.footer__top_left-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25.6px;
+  color: rgb(255, 255, 255);
+  margin-bottom: 24px;
+}
+.footer__top_left-soc {
+  display: flex;
+  justify-content: space-between;
+  width: 132px;
+}
+.footer__top_right {
+  display: flex;
+  justify-content: space-between;
+  width: 688px;
+}
+.footer__top_right .footer__item_title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: rgb(255, 255, 255);
+  margin-bottom: 24px;
+}
+.footer__top_right .footer__item_link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25.6px;
+  color: rgb(255, 255, 255);
+}
+.footer__top_right .footer__item_link:not(:last-child) {
+  margin-bottom: 8px;
+}
+.footer hr {
+  border: 1px solid rgb(131, 131, 130);
+  margin-bottom: 48px;
+}
+.footer__bot {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__bot_left {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25.6px;
+  color: rgb(255, 255, 255);
+}
+.footer__bot_right {
+  display: flex;
+  justify-content: space-between;
+  width: 280px;
+}
+.footer__bot_right-link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25.6px;
+  color: rgb(255, 255, 255);
+}/*# sourceMappingURL=style.css.map */

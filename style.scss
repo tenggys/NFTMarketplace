@@ -1,0 +1,135 @@
+@import "vars";
+@import "mixins";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: black;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+.span-button {
+    background: yellow;
+    padding: 2.5px;
+    border-radius: 5px;
+    color: $textBlack;
+}
+
+.container {
+    max-width: 1290px;
+    margin: 0 auto;
+}
+
+.header {
+    padding-top: 28px;
+    padding-bottom: 28px;
+
+    .header-flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        width: 435px;
+
+        &_link a {
+            @include text (400, 16px, 25.6px, $textWhite)
+        }
+    }
+
+    &__button {
+        padding: 14.5px 40px;
+        border-radius: 8px;
+        @include text (700, 16px, 19.2px, $textBlack);
+        background: $greenBtn;
+        border: none;
+    }
+}
+
+.footer {
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 48px;
+
+        &_left {
+            margin-top: 25px;
+            width: 272px;
+
+            &-text {
+                @include text (400, 16px, 25.6px, $textWhite);
+                margin-bottom: 24px;
+            }
+
+            &-soc {
+                display: flex;
+                justify-content: space-between;
+                width: 132px;
+            }
+        }
+
+        &_right {
+            display: flex;
+            justify-content: space-between;
+            width: 688px;
+
+            .footer__item {
+                &_title {
+                    @include text (700, 20px, 24px, $textWhite);
+                    margin-bottom: 24px;
+                }
+
+                &_link {
+                    @include text (400, 16px, 25.6px, $textWhite);
+
+                    &:not(:last-child) {
+                        margin-bottom: 8px;
+                    }
+                }
+            }
+        }
+    }
+
+    hr {
+        border: 1px solid $hr;
+        margin-bottom: 48px;
+    }
+
+    &__bot {
+        display: flex;
+        justify-content: space-between;
+
+        &_left {
+            @include text (400, 16px, 25.6px, $textWhite);
+        }
+
+        &_right {
+            display: flex;
+            justify-content: space-between;
+            width: 280px;
+
+            &-link {
+                @include text (400, 16px, 25.6px, $textWhite);
+            }
+        }
+    }
+}
