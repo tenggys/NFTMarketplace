@@ -21,13 +21,6 @@ button {
   cursor: pointer;
 }
 
-.span-button {
-  background: yellow;
-  padding: 2.5px;
-  border-radius: 5px;
-  color: black;
-}
-
 .container {
   max-width: 1290px;
   margin: 0 auto;
@@ -70,8 +63,7 @@ button {
 
 .promo {
   padding-top: 92px;
-  padding-bottom: 32px;
-  margin-bottom: 92px;
+  padding-bottom: 92px;
 }
 .promo__flex {
   display: flex;
@@ -187,6 +179,103 @@ button {
   background: none;
   border-radius: 8px;
   border: 1px solid rgb(214, 239, 14);
+}
+
+.actual {
+  padding-top: 92px;
+  padding-bottom: 92px;
+}
+.actual__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-bottom: 64px;
+}
+.actual__top_heading {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 57.6px;
+  color: rgb(255, 255, 255);
+}
+.actual__top_button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19.2px;
+  color: rgb(255, 255, 255);
+  border: none;
+  background: rgb(214, 239, 14);
+  padding: 16.5px 40px;
+  border-radius: 8px;
+}
+.actual__card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.actual__card_item {
+  padding: 20px;
+  background: rgb(19, 30, 58);
+  border-radius: 28px;
+  border-top: 1px solid rgb(214, 239, 14);
+}
+.actual__card_item-img {
+  margin-bottom: 24px;
+}
+.actual__card_item .content__top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+.actual__card_item .content__top_name {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28.8px;
+  color: rgb(255, 255, 255);
+}
+.actual__card_item .content__top_info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-bottom: 5px;
+}
+.actual__card_item .content__top_info-price {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19.2px;
+  color: rgb(255, 255, 255);
+}
+.actual__card_item .content__bot {
+  display: flex;
+  justify-content: space-between;
+}
+.actual__card_item .content__bot_info-text {
+  font-weight: 400;
+  font-size: 14.5px;
+  line-height: 22.4px;
+  color: rgb(131, 131, 130);
+  margin-bottom: 4px;
+}
+.actual__card_item .content__bot_info .content__timer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+.actual__card_item .content__bot_info .content__timer_time {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19.2px;
+  color: rgb(255, 255, 255);
+}
+.actual__card_item .content__bot_button {
+  padding: 14.5px 40px;
+  border-radius: 8px;
+  border: 1px solid rgb(214, 239, 14);
+  background: rgb(19, 30, 58);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19.2px;
+  color: rgb(214, 239, 14);
 }
 
 .footer__top {

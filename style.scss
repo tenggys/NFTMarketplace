@@ -24,12 +24,7 @@ button {
     cursor: pointer;
 }
 
-.span-button {
-    background: yellow;
-    padding: 2.5px;
-    border-radius: 5px;
-    color: $textBlack;
-}
+
 
 .container {
     max-width: 1290px;
@@ -71,8 +66,7 @@ button {
 
 .promo {
     padding-top: 92px;
-    padding-bottom: 32px;
-    margin-bottom: 92px;
+    padding-bottom: 92px;
 
     &__flex {
         display: flex;
@@ -187,6 +181,102 @@ button {
         }
     }
 
+}
+
+.actual {
+    padding-top: 92px;
+    padding-bottom: 92px;
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        margin-bottom: 64px;
+
+        &_heading {
+            @include text (500, 48px, 57.6px, $textWhite);
+        }
+
+        &_button {
+            @include text (700, 16px, 19.2px, $textWhite);
+            border: none;
+            background: $greenBtn;
+            padding: 16.5px 40px;
+            border-radius: 8px;
+        }
+    }
+
+    &__card {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+
+        &_item {
+            padding: 20px;
+            background: $blueBack;
+            border-radius: 28px;
+            border-top: 1px solid rgba(214, 239, 14, 1);
+
+            &-img {
+                margin-bottom: 24px;
+            }
+
+            .content {
+                &__top {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 16px;
+
+                    &_name {
+                        @include text (700, 24px, 28.8px, $textWhite);
+                    }
+
+                    &_info {
+                        display: flex;
+                        flex-wrap: wrap;
+                        gap: 4px;
+                        margin-bottom: 5px;
+
+                        &-price {
+                            @include text (700, 16px, 19.2px, $textWhite);
+                        }
+                    }
+                }
+
+                &__bot {
+                    display: flex;
+                    justify-content: space-between;
+
+                    &_info {
+                        &-text {
+                            @include text (400, 14.5px, 22.4px, $grayText);
+                            margin-bottom: 4px;
+                        }
+
+                        .content__timer {
+                            display: flex;
+                            flex-wrap: wrap;
+                            gap: 12px;
+                            align-items: center;
+
+                            &_time {
+                                @include text (700, 16px, 19.2px, $textWhite);
+                            }
+                        }
+                    }
+
+                    &_button {
+                        padding: 14.5px 40px;
+                        border-radius: 8px;
+                        border: 1px solid rgba(214, 239, 14, 1);
+                        background: $blueBack;
+                        @include text (700, 16px, 19.2px, $greenText);
+                    }
+                }
+
+            }
+        }
+    }
 }
 
 .footer {
