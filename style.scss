@@ -186,7 +186,6 @@ button {
 .actual {
     padding-top: 92px;
     padding-bottom: 92px;
-
     &__top {
         display: flex;
         justify-content: space-between;
@@ -274,6 +273,205 @@ button {
                     }
                 }
 
+            }
+        }
+    }
+}
+
+.create {
+    padding-top: 92px;
+    padding-bottom: 92px;
+
+    &__flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__left {
+        max-width: 426px;
+
+        &_heading {
+            @include text (500, 48px, 57.6px, $textWhite);
+            margin-bottom: 20px;
+        }
+
+        &_text {
+            @include text (400, 16px, 25.6px, $textWhite);
+            margin-bottom: 40px;
+        }
+
+        &_now {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 301px;
+            margin-bottom: 72px;
+
+            &-button {
+                padding: 16.5px 40px;
+                border-radius: 8px;
+                border: none;
+                @include text (700, 16px, 19.2px, $textWhite);
+                background: $greenBtn
+            }
+
+            &-link {
+                @include text (700, 16px, 19.2px, $textWhite);
+            }
+        }
+    }
+
+    &__right {
+        width: 740px;
+        height: 559px;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+
+        &_img {
+            &:first-child {
+                width: 410px;
+                height: 400px;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+            }
+            &:last-child {
+                width: 410px;
+                height: 475px;
+                position: absolute;
+                top: 0;
+                right: 0;
+                z-index: -1;
+            }
+        }
+    }
+}
+
+.artist {
+    padding-top: 92px;
+    padding-bottom: 92px;
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 64px;
+
+        &_heaing {
+            @include text (500, 48px, 57.6px, $textWhite);
+        }
+
+        &_button {
+            padding: 16.5px 40px;
+            border: none;
+            background: $greenBtn;
+            @include text (700, 16px, 19.2px, $textWhite);
+            border-radius: 8px;
+        }
+    }
+
+    &__card {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 30px;
+        row-gap: 30px;
+        
+
+        &_item {
+            position: relative;
+            
+            .figure {
+                position: absolute;
+                bottom: 24px;
+                left: 24px;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 12px;
+
+                &__info {
+
+                    &_who {
+                        @include text (400, 14px, 22.4px, $textWhite);
+                        margin-bottom: 4px;
+                    }
+
+                    &_name {
+                        @include text (700, 16px, 19.2px, $textWhite);
+                    }
+                }
+            }
+
+            &:nth-child(1) {
+                width: 300px;
+                height: 311px;
+            }
+
+            &:nth-child(2) {
+                width: 520px;
+                height: 311px;
+            }
+
+            &:nth-child(3) {
+                width: 410px;
+                height: 652px;
+            }
+            
+            &:nth-child(4) {
+                width: 410px;
+                height: 311px;
+            }
+
+            &:nth-child(5) {
+                width: 410px;
+                height: 311px;
+            }
+        }
+    }
+}
+
+.subscribe {
+    padding-top: 92px;
+    padding-bottom: 92px;
+    
+    &__flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__right {
+        max-width: 520px;
+
+        &_heading {
+            @include text (500, 48px, 57.6px, $textWhite);
+            margin-bottom: 20px;
+        }
+
+        &_text {
+            @include text (400, 16px, 25.6px, $textWhite);
+            margin-bottom: 40px;
+        }
+
+        &_form {
+                padding: 4px;
+                background: $blueBack;
+                border-radius: 8px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+            &-mail {
+                background: red;
+            }
+
+            &-button {
+                padding: 16.5px 40px;
+                background: $greenBtn;
+                border: none;
+                border-radius: 8px;
+                @include text (700, 16px, 19.2px, $textWhite);
             }
         }
     }

@@ -1,0 +1,47 @@
+[
+    {
+        "id": 1,
+        "img": "./img/artistCard1.png",
+        "alt": "card",
+        "figure": "./img/figure1.svg",
+        "figureAlt": "figure",
+        "who": "Owner",
+        "name": "Osvaldo Percy"
+    },
+    {
+        "id": 2,
+        "img": "./img/artistCard2.png",
+        "alt": "card",
+        "figure": "./img/figure2.svg",
+        "figureAlt": "figure",
+        "who": "Owner",
+        "name": "Ranson Sqiure"
+    },
+    {
+        "id": 3,
+        "img": "./img/artistCard3.png",
+        "alt": "card",
+        "figure": "./img/figure3.svg",
+        "figureAlt": "figure",
+        "who": "Owner",
+        "name": "Cristio leo"
+    },
+    {
+        "id": 4,
+        "img": "./img/artistCard4.png",
+        "alt": "card",
+        "figure": "./img/figure4.svg",
+        "figureAlt": "figure",
+        "who": "Owner",
+        "name": "Sebastian waltan"
+    },
+    {
+        "id": 5,
+        "img": "./img/artistCard5.png",
+        "alt": "card",
+        "figure": "./img/figure5.svg",
+        "figureAlt": "figure",
+        "who": "Owner",
+        "name": "Abraham Zack"
+    }
+]
