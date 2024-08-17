@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "img": "./img/actual1.png",
+        "alt": "actual-card",
+        "name": "Cyberpunk Cocomo",
+        "time": "03:24:56",
+        "price": 490,
+        "currency": "ETH"
+    },
+    {
+        "id": 1,
+        "img": "./img/actual2.png",
+        "alt": "actual-card",
+        "name": "Charge, Qi tiao yu",
+        "time": "03:24:56",
+        "price": 490,
+        "currency": "ETH"
+    },
+    {
+        "id": 1,
+        "img": "./img/actual3.png",
+        "alt": "actual-card",
+        "name": "Surgeon, Josh Rife",
+        "time": "03:24:56",
+        "price": 490,
+        "currency": "ETH"
+    }
+]
