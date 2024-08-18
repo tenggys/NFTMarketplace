@@ -5,16 +5,10 @@
 }
 
 body {
-  background: url(./img/body.svg) no-repeat;
+  background: linear-gradient(rgba(8, 17, 16, 0.9), rgba(8, 17, 16, 0.9)), url(./img/body.svg) no-repeat;
   background-position: center;
   background-size: cover;
   position: relative;
-}
-
-body::after {
-  background: rgb(9, 15, 29);
-  z-index: 1;
-  position: absolute;
 }
 
 li {
@@ -28,6 +22,10 @@ a {
 
 button {
   cursor: pointer;
+}
+button:hover {
+  color: black;
+  transition: 0.5s;
 }
 
 .container {
@@ -58,6 +56,11 @@ button {
   font-size: 16px;
   line-height: 25.6px;
   color: rgb(255, 255, 255);
+}
+.header__nav_link a:hover {
+  color: rgb(214, 239, 14);
+  transition: 0.5s;
+  border-bottom: 1px solid rgb(214, 239, 14);
 }
 .header__button {
   padding: 14.5px 40px;
@@ -115,6 +118,10 @@ button {
   font-size: 16px;
   line-height: 19.2px;
   color: rgb(255, 255, 255);
+}
+.promo__left_explore-link:hover {
+  color: rgb(214, 239, 14);
+  transition: 0.5s;
 }
 .promo__left_stats {
   display: flex;
@@ -285,6 +292,11 @@ button {
   font-size: 16px;
   line-height: 19.2px;
   color: rgb(214, 239, 14);
+}
+.actual__card_item .content__bot_button:hover {
+  background: rgb(214, 239, 14);
+  color: black;
+  transition: 0.5s;
 }
 
 .create {
@@ -534,6 +546,10 @@ button {
   display: flex;
   justify-content: space-between;
   width: 132px;
+}
+.footer__top_left-soc .svg-soc:hover .bc-svg {
+  fill: rgb(214, 239, 14);
+  transition: 0.5s;
 }
 .footer__top_right {
   display: flex;

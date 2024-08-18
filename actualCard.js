@@ -37,14 +37,21 @@ async function fetchata() {
                                     <p class="content__timer_time">${time}</p>
                                 </div>
                             </div>
-                            <button class="content__bot_button">
+                            <button id="button" class="content__bot_button">
                                 Place A Bid
                             </button>
                         </div>
                     </div>
                 </div>
             `;
-            actualCard.insertAdjacentHTML('beforeend', cardEl); 
+            actualCard.insertAdjacentHTML('beforeend', cardEl);
+
+            const button = document.querySelectorAll('#button');
+            button.forEach(item => {
+                item.addEventListener('click', () => {
+                    alert('МАТЕРИАЛА ЕЩЕ НЕТ...')
+                })
+            }); 
         });
     } catch (error) {
         console.log(error);
