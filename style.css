@@ -4,11 +4,19 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "Canela";
+  src: url("./fonts/Canela-Regular.woff2") format("woff2"), url("./fonts/Canela-Regular.woff") format("woff"), url("./fonts/Canela-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 body {
   background: linear-gradient(rgba(8, 17, 16, 0.9), rgba(8, 17, 16, 0.9)), url(./img/body.svg) no-repeat;
   background-position: center;
   background-size: cover;
   position: relative;
+  font-family: "Inter", sans-serif;
+  font-family: "Canela", serif;
 }
 
 li {
@@ -572,6 +580,10 @@ button:hover {
 .footer__top_right .footer__item_link:not(:last-child) {
   margin-bottom: 8px;
 }
+.footer__top_right .footer__item_link:hover {
+  color: rgb(214, 239, 14);
+  transition: 0.5s;
+}
 .footer hr {
   border: 1px solid rgb(131, 131, 130);
   margin-bottom: 48px;
@@ -596,4 +608,8 @@ button:hover {
   font-size: 16px;
   line-height: 25.6px;
   color: rgb(255, 255, 255);
+}
+.footer__bot_right-link:hover {
+  color: rgb(214, 239, 14);
+  transition: 0.5s;
 }/*# sourceMappingURL=style.css.map */

@@ -49,7 +49,7 @@ async function fetchata() {
             const button = document.querySelectorAll('#button');
             button.forEach(item => {
                 item.addEventListener('click', () => {
-                    alert('МАТЕРИАЛА ЕЩЕ НЕТ...')
+                    console.log('МАТЕРИАЛА ЕЩЕ НЕТ...');
                 })
             }); 
         });
